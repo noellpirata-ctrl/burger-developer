@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Developer - Artesanal & Luxo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. TOPO DA HAMBURGUERIA PRESO NA TELA -->
+    <header class="topo-burger">
+        <div class="logo-burger">BURGER <span>DEVELOPER</span></div>
+        <nav class="links-burger">
+            <a href="#secao-alface">🥬 Saladas</a>
+            <a href="#secao-queijo">🧀 Queijos</a>
+            <a href="#secao-carne">🥩 Carnes</a>
+        </nav>
+    </header>
+
+    <!-- 2. RECHEIO DO CARDÁPIO (ONDE A MÁGICA DO RECHEIO ACONTECE) -->
+    
+            <main class="container-cardapio">
+
+        <!-- 🥖 NOVO: ABERTURA COM O PÃO DE CIMA FLUTUANTE -->
+        <section class="camada-ingrediente pao-secao">
+            <div class="bloco-imagem-esquerda">
+                <img src="pao-cima.png" alt="Pão de Cima com Gergelim" class="img-flutuante">
+            </div>
+            <div class="bloco-texto-direita">
+                <span class="tag-ingrediente">O Começo de Tudo</span>
+                <h2>Pão Brioche Selado</h2>
+                <p>Nossa jornada começa com um pão brioche artesanal, levemente adocicado, selado na manteiga de garrafa para garantir a crocância e não deixar o molho vazar.</p>
+            </div>
+        </section>
+
+        <!-- Camada 1: Alface (Topo do site, fundo marrom churrasco) -->
+        <section id="secao-alface" class="camada-ingrediente">
+            <div class="bloco-imagem-esquerda">
+                <img src="alface.png" alt="Alface Fresco" class="img-flutuante">
+            </div>
+            <div class="bloco-texto-direita">
+                <span class="tag-ingrediente">Camada 01</span>
+                <h2>🥬 Alface & Refrescância</h2>
+                <ul class="lista-lanches-premium">
+                    <li>
+                        <div class="lanche-topo">
+                            <strong class="nome-lanche-ouro">Green Code Burger</strong>
+                            <span class="preco-cheddar">R$ 28,90</span>
+                        </div>
+                        <p>Muito alface crespa, tomate italiano, maionese verde artesanal e pão brioche.</p>
+                        <a href="#" class="btn-whats-gourmet">Pedir via WhatsApp</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Camada 2: Queijo (Meio do site, fundo começa a esquentar para laranja) -->
+        <section id="secao-queijo" class="camada-ingrediente">
+            <div class="bloco-imagem-esquerda">
+                <img src="queijo.png" alt="Queijo Cheddar Derretido" class="img-flutuante">
+            </div>
+            <div class="bloco-texto-direita">
+                <span class="tag-ingrediente">Camada 02</span>
+                <h2>🧀 Queijo & Cremosidade</h2>
+                <ul class="lista-lanches-premium">
+                    <li>
+                        <div class="lanche-topo">
+                            <strong class="nome-lanche-ouro">Cheddar Overflow</strong>
+                            <span class="preco-cheddar">R$ 36,90</span>
+                        </div>
+                        <p>Blend de 150g coberto com uma piscina transbordando de cheddar líquido e bacon.</p>
+                        <a href="#" class="btn-whats-gourmet">Pedir via WhatsApp</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Camada 3: Carne (Base do site, fundo vira o vermelho/amarelo do fogo) -->
+        <section id="secao-carne" class="camada-ingrediente">
+            <div class="bloco-imagem-esquerda">
+                <img src="carne.png" alt="Carne Smash na Chapa" class="img-flutuante">
+            </div>
+            <div class="bloco-texto-direita">
+                <span class="tag-ingrediente">Camada 03</span>
+                <h2>🥩 O Blend de Respeito</h2>
+                <ul class="lista-lanches-premium">
+                    <li>
+                        <div class="lanche-topo">
+                            <strong class="nome-lanche-ouro">Monster Stack CSS</strong>
+                            <span class="preco-cheddar">R$ 42,90</span>
+                        </div>
+                        <p>Três carnes smash de 100g prensadas na chapa, crostinha perfeita e barbecue.</p>
+                        <a href="#" class="btn-whats-gourmet">Pedir via WhatsApp</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+            <!-- 🥖 NOVO: FECHAMENTO COM O PÃO DE BAIXO -->
+        <section class="camada-ingrediente pao-secao">
+            <div class="bloco-imagem-esquerda">
+                <img src="pao-baixo.png" alt="Pão de Baixo" class="img-flutuante">
+            </div>
+            <div class="bloco-texto-direita">
+                <span class="tag-ingrediente">A Base de Tudo</span>
+                <h2>A Base Perfeita</h2>
+                <p>E para sustentar todo esse sabor, a base do nosso pão brioche selada com maestria. O fechamento perfeito da sua melhor experiência gastronômica.</p>
+            </div>
+        </section>
+
+    </main> <!-- Fim do container-cardapio -->
+
+        <!-- 3. RODAPÉ DE LUXO (FOOTER) -->
+    <footer class="rodape-burger">
+        <div class="conteudo-rodape-burger">
+            
+            <!-- Coluna 1: Nome e Conceito -->
+            <div class="coluna-burger">
+                <h3>Burger Developer</h3>
+                <p>Onde a alta gastronomia artesanal encontra a precisão do código limpo.</p>
+            </div>
+
+            <!-- Coluna 2: Horários de Funcionamento -->
+            <div class="coluna-burger">
+                <h4>Horário de Funcionamento</h4>
+                <p>Terça a Quinta: 18h às 23h</p>
+                <p>Sexta a Domingo: 18h às 00h</p>
+            </div>
+
+            <!-- Coluna 3: Endereço Realista -->
+            <div class="coluna-burger">
+                <h4>Localização</h4>
+                <p>Av. Paulista, 1000 — Bela Vista</p>
+                <p>São Paulo — SP</p>
+            </div>
+
+        </div>
+
+        <!-- Linha discreta de direitos autorais -->
+        <div class="direitos-burger">
+            <p>&copy; 2026 Burger Developer. Todos os direitos reservados. Template Comercial.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

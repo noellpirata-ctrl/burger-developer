@@ -1,0 +1,241 @@
+/* RESET PADRÃO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* O TRUQUE OUSADO: O fundo começa marrom churrasco e vira fogo embaixo */
+body {
+    background: linear-gradient(to bottom, #1a0f0a 0%, #2e1509 40%, #e65c00 80%, #f9d423 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* HEADER PRESO NO TOPO DE LUXO */
+.topo-burger {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: rgba(26, 15, 10, 0.95); /* Acompanha o marrom do topo */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-burger {
+    font-size: 1.4rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.logo-burger span {
+    color: #fca311; /* Amarelo Cheddar na logo */
+}
+
+.links-burger a {
+    text-decoration: none;
+    color: #cccccc;
+    margin: 0 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.links-burger a:hover {
+    color: #fca311;
+}
+
+/* CONTAINER DAS SEÇÕES */
+.container-cardapio {
+    width: 100%;
+    padding-top: 100px; /* Desconta a altura do topo fixo */
+}
+
+/* A ESTRUTURA DE COLUNA (Imagem na esquerda, Texto na direita) */
+.camada-ingrediente {
+    width: 100%;
+    min-height: 80vh; /* Cada ingrediente ganha um espaço gigante na tela */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    gap: 60px;
+}
+
+.bloco-imagem-esquerda {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Efeito de flutuação suave do ingrediente */
+.img-flutuante {
+    max-width: 320px;
+    height: auto;
+    filter: drop-shadow(0px 15px 25px rgba(0,0,0,0.5));
+    animation: flutuar 4s ease-in-out infinite; /* Balanço de IA chique */
+}
+
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.bloco-texto-direita {
+    flex: 1.2;
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo preto transparente para dar leitura perfeita no fogo */
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px); /* Desfoca o fundo sutilmente atrás do texto */
+}
+
+.tag-ingrediente {
+    color: #fca311;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.bloco-texto-direita h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+}
+
+/* DETALHES DO LANCHE */
+.lista-lanches-premium {
+    list-style: none;
+}
+
+.lanche-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Nome do lanche e preços na cor ouro/cheddar que você pediu! */
+.nome-lanche-ouro {
+    font-size: 1.3rem;
+    color: #fca311; 
+    font-weight: bold;
+}
+
+.preco-cheddar {
+    font-size: 1.3rem;
+    color: #fca311;
+    font-weight: 900;
+}
+
+.bloco-texto-direita p {
+    color: #dddddd;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* BOTÃO WHATSAPP REDONDINHO GOURMET */
+.btn-whats-gourmet {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-whats-gourmet:hover {
+    background-color: #128C7E;
+    transform: scale(1.05);
+}
+
+/* Ajuste rápido para celulares */
+@media (max-width: 850px) {
+    .camada-ingrediente {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .lanche-topo { flex-direction: column; gap: 5px; }
+    .img-flutuante { max-width: 220px; }
+    .topo-burger { flex-direction: column; gap: 10px; }
+}
+
+/* 6. ESTILIZAÇÃO DO RODAPÉ (FOOTER) */
+.rodape-burger {
+    width: 100%;
+    background-color: rgba(26, 15, 10, 0.98); /* Marrom ultra escuro para fechar o site com leitura perfeita */
+    padding: 60px 8% 20px 8%;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Organiza as 3 colunas em pé ou deitadas dependendo da tela */
+.conteudo-rodape-burger {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.coluna-burger {
+    flex: 1;
+    min-width: 220px;
+}
+
+.coluna-burger h3 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.coluna-burger h4 {
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fca311; /* Títulos do rodapé na cor cheddar */
+    margin-bottom: 15px;
+}
+
+.coluna-burger p {
+    color: #aaaaaa;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+/* Linha final de Copyright */
+.direitos-burger {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.direitos-burger p {
+    color: #555555;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
